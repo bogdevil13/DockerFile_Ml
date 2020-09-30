@@ -9,7 +9,6 @@ RUN mkdir /root/ws/
 VOLUME /root/ws/
 
 COPY cnn_dataset /root/ws/cnn_dataset
-COPY project.py /root/ws
 
 RUN wget \
     https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh \
@@ -23,4 +22,3 @@ RUN conda install pillow -y
 WORKDIR /root/ws/
 
 CMD ["bin/bash"]
-CMD ["python3","project.py"]
