@@ -95,3 +95,5 @@ test_generator = test_datagen.flow_from_directory(
         batch_size=1)
 
 predict = model.predict_generator(test_generator,steps = 3)
+
+print( predict )
