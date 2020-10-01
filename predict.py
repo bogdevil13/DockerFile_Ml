@@ -96,4 +96,5 @@ test_generator = test_datagen.flow_from_directory(
 
 predict = model.predict_generator(test_generator,steps = 3)
 
+print("The predictions are ")
 print( predict )
